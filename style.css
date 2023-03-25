@@ -1,0 +1,117 @@
+.page {
+  background: url("./img/dog-main.png") no-repeat center top;
+  width: 1280px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cdcdcd;
+}
+
+.visually-hidden,
+.button-burger {
+  visibility: hidden;
+}
+
+.page-body {
+  padding: 30px 40px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav__caption {
+  font-size: 32px;
+  margin: 0;
+  color: #f1cdb3;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.main-nav__caption-mini {
+  font-size: 13px;
+  margin: 0;
+  color: #fff;
+}
+
+.main-nav__list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #cdcdcd;
+  display: flex;
+}
+
+.site-list__link {
+  color: #cdcdcd;
+  text-decoration: none;
+  margin-left: 35px;
+  padding-bottom: 3px;
+}
+
+.site-list__link--active {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.not-only {
+  padding-top: 253px;
+  max-width: 36vw;
+  padding-bottom: 243px;
+}
+
+.not-only__caption {
+  font-size: 44px;
+  line-height: 57px;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 44px;
+  line-height: 57px;
+  color: #fff;
+  padding-bottom: 42px;
+}
+
+.not-only__description {
+  font-size: 15px;
+  line-height: 24px;
+  padding-bottom: 42px;
+}
+
+.yellow-button {
+  background-color: #f1cdb3;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 100px;
+}
+
+.about {
+  background: url("./img/about-pets.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 80px 160px 100px;
+  color: #545454;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.about__container {
+  margin: 95px 0 95px auto;
+  max-width: 33.5vw;
+}
+
+.about__caption {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+padding-right: 18px;
+}
+
+.about__description {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
