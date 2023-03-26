@@ -1,9 +1,16 @@
 .page {
   background: url("./img/dog-main.png") no-repeat center top;
-  width: 1280px;
-  margin: 0 auto;
+  background-size: auto;
+
   font-family: Arial, Helvetica, sans-serif;
   color: #cdcdcd;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .visually-hidden,
@@ -12,8 +19,11 @@
 }
 
 .page-body {
-  padding: 30px 40px;
+  padding-top: 30px;
+  margin: 0;
 }
+
+/*main-nav*/
 
 .main-nav {
   display: flex;
@@ -59,7 +69,7 @@
 .not-only {
   padding-top: 253px;
   max-width: 36vw;
-  padding-bottom: 243px;
+  padding-bottom: 210px;
 }
 
 .not-only__caption {
@@ -71,12 +81,16 @@
   line-height: 57px;
   color: #fff;
   padding-bottom: 42px;
+  display: block;
+  max-width: 30vw;
 }
 
 .not-only__description {
   font-size: 15px;
   line-height: 24px;
   padding-bottom: 42px;
+  display: block;
+  max-width: 460px;
 }
 
 .yellow-button {
@@ -91,27 +105,115 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin: 80px 160px 100px;
+  margin: 94px 175px;
   color: #545454;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
+  max-width: 1200px;
+ 
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.about__container {
-  margin: 95px 0 95px auto;
-  max-width: 33.5vw;
+.about__text {
+  padding: 20px 0 20px;
+  max-width: 430px;
+  display: block;align-self: end;
 }
 
 .about__caption {
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-padding-right: 18px;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  padding-right: 18px;
+  margin: 0;
 }
 
 .about__description {
-    font-size: 15px;
-    line-height: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-friends {
+  background-color: #fafafa;
+  background: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.our-friends__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-friends__caption {
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 45px;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #545454;
+}
+
+.our-friends__button {
+  padding: 14px 17px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  background: #f6f6f6;
+  width: 52px;
+  height: 52px;
+}
+
+.our-friends__list {
+  display: flex;
+  padding: 0 40px;
+  list-style: none;
+  margin: 0;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.our-friend {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  background-color:  #FAFAFA;;
+  padding-bottom: 30px;
+  border-radius: 9px;
+}
+
+.our-friends__item {
+ 
+  padding-right: 90px;
+}
+
+.our-friends__item:last-child {
+  padding-right: 0;
+}
+
+.our-friends__pets-name {
+  font-size: 20px;
+  color: #545454;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center; 
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.learn-more {
+border: 2px solid #F1CDB3;
+border-radius: 100px;
+padding: 15px 45px;
+font-size: 17px;
+font-family: 'Georgia';
+background-color:  #FAFAFA;
+display: block;
+margin: 0 auto;
+}
+
+.learn-more--yellow {
+  background-color: #F1CDB3;
 }
