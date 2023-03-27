@@ -1,6 +1,7 @@
 .page {
   background: url("./img/dog-main.png") no-repeat center top;
   background-size: auto;
+  scroll-behavior: smooth;
 
   font-family: Arial, Helvetica, sans-serif;
   color: #cdcdcd;
@@ -59,17 +60,16 @@ ul {
   padding-top: 18px;
   color: #cdcdcd;
   display: flex;
+  cursor: pointer
 }
+
+button {cursor: pointer}
 
 .site-list__link {
   color: #cdcdcd;
   text-decoration: none;
   margin-left: 30px;
   padding-bottom: 5px;
-}
-
-.site-list__link--active {
-  border-bottom: 3px solid #f1cdb3;
 }
 
 .not-only {
@@ -96,7 +96,7 @@ ul {
 .not-only__description {
   font-size: 15px;
   line-height: 24px;
-  padding-bottom: 43px;
+  padding-bottom: 61px;
   display: block;
   max-width: 460px;
   margin: 0;
@@ -109,6 +109,11 @@ ul {
   border-radius: 100px;
   font-size: 17px;
   letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.yellow-button:hover {
+  background: #FDDCC4;
 }
 
 .about,
@@ -117,20 +122,28 @@ ul {
   flex-direction: column;
   justify-content: end;
   color: #545454;
-  max-width: 1200px;
+
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .about {
-  margin: 94px 175px;
-
+  margin: 107px 175px 94px;
   background: url("./img/about-pets.png") no-repeat;
 }
 
 .in-addition {
-  background: url("./img/donation-dog.png") no-repeat;
   background-color: #f6f6f6;
-  background-position: 23% 46%;
+  padding-bottom: 64px;
+  background-image: url("./img/donation-dog.png") no-repeat;
+  background-position: 23% 47%;
+}
+
+.in-addition__container {
+  padding: 85px 185px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__text,
@@ -213,6 +226,7 @@ ul {
 
 .our-friends__item {
   padding-right: 90px;
+  cursor: pointer
 }
 
 .our-friends__item:last-child {
@@ -238,10 +252,29 @@ ul {
   display: block;
   margin: 0 auto;
   letter-spacing: 0.06em;
+  max-width: 260px;
+  color: #292929;
+
 }
 
 .learn-more--yellow {
   background-color: #f1cdb3;
+  padding: 15px 36px;
+  max-width: 181px;
+}
+
+.learn-more--yellow:hover,
+.our-friends__button:hover {
+  background: #FDDCC4;
+
+}
+
+.our-friends__button--inactive {
+  border:2px solid #CDCDCD;
+}
+
+.our-friends__button--active {
+  background-color:#F1CDB3;
 }
 
 .help {
@@ -295,36 +328,37 @@ ul {
   padding-bottom: 6px;
 }
 
-.in-addition__container {
+/* .in-addition__container {
   margin: 94px 175px;
   display: flex;
-}
+} */
 
 .in-addition__text {
-  margin: 61px 92px;
+  margin: 0 0 0 auto;
+  padding-left: 30px;
+  padding-top: 0;
 }
 
 .in-addition__description {
   font-size: 15px;
   color: #545454;
-  margin: 0;  letter-spacing: 0.06em;
-padding-bottom: 20px;
+  margin: 0;
+  letter-spacing: 0.06em;
+  padding-bottom: 17px;
 }
 
 .in-addition__span {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   letter-spacing: 0.06em;
-padding-left: 10px;
-
+  padding-left: 10px;
 }
 
 .in-addition__button {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   border-radius: 9px;
   border: none;
   padding: 7px 17px 9px 15px;
-
 }
 
 .in-addition__description--second {
@@ -332,11 +366,11 @@ padding-left: 10px;
   font-weight: normal;
   font-style: italic;
   font-size: 12px;
-line-height: 18px;
-font-family: Arial, Helvetica, sans-serif;
-padding-right: 70px;
-padding-top: 20px;
-letter-spacing: normal;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 16px;
+  padding-top: 20px;
+  letter-spacing: normal;
 }
 
 .in-addition__caption {
@@ -344,18 +378,20 @@ letter-spacing: normal;
   font-size: 35px;
   font-weight: normal;
   letter-spacing: 0.06em;
-line-height: 45px;
-padding-bottom: 17px;
+  line-height: 45px;
+  padding-bottom: 17px;
 }
 
 .footer {
-  background-image: url('./img/footer-gradient-background.png');
+  background: linear-gradient(to right, #3d3027, #19191b);
   padding-top: 56px;
 }
 
 .footer__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-right: 68px;
 }
 
 .footer__waiting-list {
@@ -364,32 +400,39 @@ padding-bottom: 17px;
 }
 
 .footer__list li {
-  color: #F1CDB3;
-font-size: 20px;
-line-height: 23px;
-letter-spacing: 0.06em;
-padding-top: 3px;
-display: flex;
-padding-bottom: 31px;
+  
+  padding-top: 3px;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.footer__list li a {
+  color: #f1cdb3;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  border: none;
+}
+
+.footer__waiting-list li {
+  padding-bottom: 33px;
 }
 
 .footer__waiting-list li:first-child {
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-color: #ffffff;
-line-height: 45px;
-letter-spacing: 0.06em;
-padding-top: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  padding-top: 0;
 }
 
 .footer__item {
   padding-right: 93px;
   width: 23vw;
-  margin-left: -70px;
   letter-spacing: 0.06em;
-
 }
 
 .footer__item:last-child {
@@ -399,13 +442,45 @@ padding-top: 0;
 }
 
 .footer__svg {
-width: auto;
-height: 100%;
-margin-right: 15px;
-margin-left: 2px;
+  width: auto;
+  height: 100%;
+  margin-right: 15px;
+  margin-left: 2px;
 }
 
 .footer__waiting-list .footer__questions {
-  padding-bottom: 51px;
+  padding-bottom: 45px;
   padding-top: 10px;
+}
+
+.footer__waiting-list a {
+text-decoration: none;
+display: flex;
+}
+
+.site-list__link:hover {
+  color: #fafafa;
+}
+
+.site-list__link {
+  color: #cdcdcd;
+}
+
+.site-list__link:active {
+  color: white;
+}
+
+.site-list__link--active,
+.site-list__link--active:hover,
+.site-list__link--active:active {
+  border-bottom: 3px solid #f1cdb3;
+  color: #fafafa;
+}
+
+.our-friend:hover .learn-more {
+  background: #fddcc4;
+}
+
+.our-friend:active {
+  border: 1px solid black;
 }
