@@ -531,7 +531,7 @@ color: #292929;
   color: #fafafa;
 }
 
-.site-list__link--active-pets {
+.site-list__link--active-pets, .site-list__link--active-pets:hover {
   color: #292929;
 }
 
