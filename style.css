@@ -24,6 +24,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden,
 .button-burger {
   visibility: hidden;
@@ -392,13 +396,16 @@ button {
   font-size: 20px;
   letter-spacing: 0.06em;
   padding-left: 10px;
+  color: #545454
+  ;
 }
 
 .in-addition__button {
   background-color: #f1cdb3;
   border-radius: 9px;
   border: none;
-  padding: 7px 17px 9px 15px;
+  padding: 9px 14px 10px 11px;
+  width: 321px;
 }
 
 .in-addition__description--second {
@@ -509,6 +516,10 @@ button {
   color: #545454;
 }
 
+.site-list__link--pets:hover {
+color: #292929;
+}
+
 .site-list__link:active {
   color: white;
 }
@@ -566,10 +577,17 @@ button {
 
 }
 
+.pagination a:hover, 
+  .pagination a.choice:hover{
+  background-color: #FDDCC4;
+  border: 1px solid #FDDCC4;
+}
+
 .pagination a.choice {
   border: 2px solid #F1CDB3;
 color: #F1CDB3;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) { background-color: #FDDCC4;
+  border: 1px solid #FDDCC4;}
 
