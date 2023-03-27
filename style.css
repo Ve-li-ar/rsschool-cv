@@ -531,7 +531,7 @@ color: #292929;
   color: #fafafa;
 }
 
-.site-list__link--active-pets {
+.site-list__link--active-pets, .site-list__link--active:hover {
   color: #292929;
 }
 
@@ -591,3 +591,6 @@ color: #F1CDB3;
 .pagination a:hover:not(.active) { background-color: #FDDCC4;
   border: 1px solid #FDDCC4;}
 
+
+
+ 
