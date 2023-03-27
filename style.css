@@ -52,7 +52,7 @@ ul {
   margin: 0;
   color: #fff;
   letter-spacing: 0.1em;
-padding-top: 10px;
+  padding-top: 10px;
 }
 
 .main-nav__list {
@@ -76,7 +76,6 @@ padding-top: 10px;
   padding-top: 235px;
   max-width: 36vw;
   padding-bottom: 226px;
-  
 }
 
 .not-only__caption {
@@ -90,7 +89,7 @@ padding-top: 10px;
   padding-bottom: 38px;
   display: block;
   max-width: 30vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
 }
 
@@ -110,25 +109,36 @@ padding-top: 10px;
   border-radius: 100px;
   font-size: 17px;
   letter-spacing: 0.06em;
-
 }
 
-.about {
-  background: url("./img/about-pets.png") no-repeat;
+.about,
+.in-addition {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin: 94px 175px;
   color: #545454;
   max-width: 1200px;
- 
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.about__text {
+.about {
+  margin: 94px 175px;
+
+  background: url("./img/about-pets.png") no-repeat;
+}
+
+.in-addition {
+  background: url("./img/donation-dog.png") no-repeat;
+  background-color: #f6f6f6;
+  background-position: 23% 46%;
+}
+
+.about__text,
+.in-addition__text {
   padding: 20px 0 20px;
   max-width: 430px;
-  display: block;align-self: end;
+  display: block;
+  align-self: end;
 }
 
 .about__caption {
@@ -196,13 +206,12 @@ padding-top: 10px;
   padding: 0;
   list-style: none;
   margin: 0;
-  background-color:  #FAFAFA;;
+  background-color: #fafafa;
   padding-bottom: 30px;
   border-radius: 9px;
 }
 
 .our-friends__item {
- 
   padding-right: 90px;
 }
 
@@ -213,30 +222,30 @@ padding-top: 10px;
 .our-friends__pets-name {
   font-size: 20px;
   color: #545454;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center; 
-padding-top: 30px;
-padding-bottom: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .learn-more {
-border: 2px solid #F1CDB3;
-border-radius: 100px;
-padding: 15px 42px;
-font-size: 17px;
-font-family: 'Georgia';
-background-color:  #FAFAFA;
-display: block;
-margin: 0 auto;
-letter-spacing: 0.06em;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  padding: 15px 42px;
+  font-size: 17px;
+  font-family: "Georgia";
+  background-color: #fafafa;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
 }
 
 .learn-more--yellow {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
 }
 
 .help {
-  padding: 80px 87px 100px 87px;
+  padding: 80px 87px 34px 87px;
 }
 
 .help__caption {
@@ -245,9 +254,9 @@ letter-spacing: 0.06em;
   margin: 0;
   text-align: center;
   letter-spacing: 0.06em;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: normal;
-line-height: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  line-height: 45px;
 }
 
 .help__container {
@@ -265,22 +274,76 @@ line-height: 45px;
 .help__list li {
   padding-left: 121px;
   font-size: 22px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 5px;
- padding-bottom: 40px;
- color: #545454;
+  padding-bottom: 40px;
+  color: #545454;
 }
 
- .help__list li:nth-child(1),  .help__list li:nth-child(6) {
+.help__list li:nth-child(1),
+.help__list li:nth-child(6) {
   padding-left: 0;
-} 
+}
 
 .help__svg {
   margin: 0 auto;
   display: block;
- margin-top: -7px;
- padding-bottom: 6px;
+  margin-top: -7px;
+  padding-bottom: 6px;
+}
+
+.in-addition__container {
+  margin: 94px 175px;
+  display: flex;
+}
+
+.in-addition__text {
+  margin: 63px 92px;
+}
+
+.in-addition__description {
+  font-size: 15px;
+  color: #545454;
+  margin: 0;  letter-spacing: 0.06em;
+padding-bottom: 20px;
+}
+
+.in-addition__span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+padding-left: 10px;
+
+}
+
+.in-addition__button {
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  border: none;
+  padding: 7px 17px 9px 15px;
+
+}
+
+.in-addition__description--second {
+  color: #b2b2b2;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
+line-height: 18px;
+font-family: Arial, Helvetica, sans-serif;
+padding-right: 70px;
+padding-top: 20px;
+letter-spacing: normal;
+}
+
+.in-addition__caption {
+  margin: 0;
+  font-size: 35px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+line-height: 45px;
+padding-bottom: 17px;
 }
