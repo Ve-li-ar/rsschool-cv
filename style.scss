@@ -387,32 +387,27 @@ button {
     margin: 0;
 
     @media (max-width: $mobile-width-only) {
-      font-size: 25px; 
-       
-      
+      font-size: 25px;
     }
-  @media (max-width: $mobile-width-only) {
-    padding-right: 0;
-    text-align: center;
-    line-height: 32.5px;
-  }
-  
+    @media (max-width: $mobile-width-only) {
+      padding-right: 0;
+      text-align: center;
+      line-height: 32.5px;
+    }
   }
 
   @media (max-width: $tablet-width) {
-    margin: 60px 138px 94px;
+    margin: 60px 138px 106px;
     max-height: 1048px;
     flex-direction: column;
-    
   }
 
   @media (max-width: $mobile-width-only) {
-    margin: 0 auto; 
-      text-align: justify;
-      padding-right: 0;
-      padding-left: 5px;
-      padding-right: 5px;
-    
+    margin: 0 auto;
+    text-align: justify;
+    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   &__description {
@@ -424,25 +419,24 @@ button {
 
     @media (max-width: $mobile-width-only) {
       padding-top: 23px;
-      
     }
   }
 
   &__text {
     margin: 0 auto;
-    padding-bottom: 80px; margin: 0;
+    padding-bottom: 80px;
+    margin: 0;
     padding: 20px 15px;
 
     @media (max-width: $tablet-width) {
       max-width: 100%;
+      padding: 20px 0 75px;
     }
     @media (max-width: $mobile-width-only) {
       text-align: justify;
-      padding-top:41px;
+      padding-top: 41px;
       padding-bottom: 42px;
-     
     }
-  
   }
 
   &__img {
@@ -538,6 +532,10 @@ button {
     width: 52px;
     height: 52px;
     margin-top: -61px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: -4px;
+    }
     &--inactive {
       border: 2px solid $var1;
     }
@@ -552,6 +550,10 @@ button {
     margin: 0;
     justify-content: space-between;
     padding-bottom: 56px;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+    }
     &--pets {
       padding: 0;
       flex-wrap: wrap;
@@ -567,6 +569,16 @@ button {
     }
     &:last-child {
       padding-right: 0;
+    }
+
+    @media (max-width: $tablet-width) {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+
+      padding-right: 0;
+      padding-left: 13px;
+      padding-right: 19px;
     }
   }
   &__pets-name {
@@ -611,6 +623,10 @@ button {
     background-color: $var2;
     padding: 15px 36px;
     max-width: 181px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 56px;
+    }
   }
 }
 .learn-more--yellow:hover,

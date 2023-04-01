@@ -386,7 +386,7 @@ button {
 }
 @media (max-width: 1279px) {
   .about {
-    margin: 60px 138px 94px;
+    margin: 60px 138px 106px;
     max-height: 1048px;
     flex-direction: column;
   }
@@ -421,6 +421,7 @@ button {
 @media (max-width: 1279px) {
   .about__text {
     max-width: 100%;
+    padding: 20px 0 75px;
   }
 }
 @media (max-width: 767px) {
@@ -524,6 +525,11 @@ button {
   height: 52px;
   margin-top: -61px;
 }
+@media (max-width: 1279px) {
+  .our-friends__button {
+    margin-top: -4px;
+  }
+}
 .our-friends__button--inactive {
   border: 2px solid #cdcdcd;
 }
@@ -537,6 +543,11 @@ button {
   margin: 0;
   justify-content: space-between;
   padding-bottom: 56px;
+}
+@media (max-width: 1279px) {
+  .our-friends__list {
+    padding: 0;
+  }
 }
 .our-friends__list--pets {
   padding: 0;
@@ -553,6 +564,16 @@ button {
 }
 .our-friends__item:last-child {
   padding-right: 0;
+}
+@media (max-width: 1279px) {
+  .our-friends__item {
+    padding-right: 0;
+    padding-left: 13px;
+    padding-right: 19px;
+  }
+  .our-friends__item:nth-child(n+3) {
+    display: none;
+  }
 }
 .our-friends__pets-name {
   font-size: 20px;
@@ -596,6 +617,11 @@ button {
   background-color: #f1cdb3;
   padding: 15px 36px;
   max-width: 181px;
+}
+@media (max-width: 1279px) {
+  .learn-more--yellow {
+    margin-top: 56px;
+  }
 }
 
 .learn-more--yellow:hover,
