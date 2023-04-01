@@ -64,13 +64,39 @@
           </p>
           <a href="#ourfriends" class="yellow-button yellow-button__center">Make a friend</a></div>
           <div class="not-only__container-img">
-            <img  class="not-only__img" src="./img/start-screen-puppy.png" alt="">
+            <picture>
+              <source
+                class="not-only__img"
+                media="(max-width: 320px)"
+                srcset="img/start-screen-puppy-mobile.png"
+                width="260"
+                height="270"
+                
+              />
+              <source
+              class="not-only__img"
+              media="(max-width: 768px)"
+              srcset="img/start-screen-puppy-tablet.png"
+              width="570"
+              height="593"
+              
+            />
+            
+              <img
+                class="not-only__img"
+                src="img/start-screen-puppy.png"
+                alt="puppy"
+                width="698"
+                height="728"
+              />
+            </picture>
+       
           </div>
         </section>
         
       </div>
       
-      <!-- <div class="container">
+       <div class="container">
         <section class="about">
           <div class="about__text">
             <h2 class="about__caption">About the shelter <br />“Cozy House”</h2>
@@ -89,8 +115,29 @@
               the pets and would hardly ever leave them alone.
             </p>
           </div>
+          <picture>
+            <source
+              class="about__img"
+              media="(max-width: 320px)"
+              srcset="img/about-pets.png"
+              width="260"
+              height="353"
+              
+            />
+          
+            <img
+           
+              class="about__img"
+              src="img/about-pets.png"
+              alt="cat and dog"
+              width="300"
+              height="408"
+            />
+          </picture>
+        
         </section>
       </div>
+      <!--
       <div class="our-friends" id="ourfriends">
         <div class="container">
           <h2 class="our-friends__caption">
@@ -474,10 +521,10 @@
             </p>
           </div>
         </div>
-      </section>-->
+      </section>
   
 
-    <footer class="footer" id="contacts"> <!--
+    <footer class="footer" id="contacts"> 
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
