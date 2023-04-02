@@ -52,7 +52,7 @@ $mobile-width-only: 767px;
 }
 
 .container {
-  width: 93.75wv;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -320,7 +320,7 @@ button {
     @media (max-width: $tablet-width) {
       width: 74.2vw;
       padding-top: 96px;
-      padding-left: 46px;
+      padding-left: 16px;
 
       max-width: 569px;
       height: auto;
@@ -371,6 +371,10 @@ button {
     max-width: 430px;
     display: block;
     align-self: end;
+
+    @media (max-width: 1279px) {
+      max-width: 100%;
+    }
   }
 }
 .about {
@@ -446,19 +450,45 @@ button {
 }
 .in-addition {
   background-color: $var7;
-  background-image: url("./img/donation-dog.png") no-repeat;
-  background-position: 23% 47%;
+
   &__container {
-    max-width: 1280px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 85px;
+    justify-content: center;
+    padding-left: 62px;
+
+    @media (max-width: $tablet-width) {
+      width: 61vw;
+      flex-direction: column-reverse;
+      padding-left: 0;
+      align-items: center;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin: 0 auto;
+    }
   }
   &__text {
-    margin: 0 0 0 auto;
     padding-left: 30px;
     padding-top: 0;
+    padding-bottom: 40px;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+      padding-left: 26px;
+      padding-right: 5px;
+      text-align: start;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-left: 72px;
+      padding-right: 70px;
+    }
   }
+
   &__description {
     font-size: 15px;
     color: $var3;
@@ -472,9 +502,13 @@ button {
       font-size: 12px;
       line-height: 18px;
       font-family: Arial, Helvetica, sans-serif;
-      padding-right: 16px;
+      padding-right: 50px;
       padding-top: 20px;
       letter-spacing: normal;
+
+      @media (max-width: $tablet-width) {
+        padding-right: 0;
+      }
     }
   }
   &__span {
@@ -490,6 +524,15 @@ button {
     border: none;
     padding: 9px 14px 10px 11px;
     width: 321px;
+    margin: 0;
+    @media (min-width: $mobile-width-only) and (max-width: 1279px) {
+      padding: 9px 15px 10px 13px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin: 0;
+    }
   }
   &__caption {
     margin: 0;
@@ -498,6 +541,13 @@ button {
     letter-spacing: 0.06em;
     line-height: 45px;
     padding-bottom: 17px;
+  }
+
+  & img {
+    margin: 0 auto;
+    @media (max-width: $tablet-width) {
+      margin-left: -36px;
+    }
   }
 }
 .our-friends {
@@ -682,11 +732,14 @@ button {
 }
 .help {
   padding: 80px 0px 34px;
-
+  @media (max-width: $tablet-width) {
+    padding-bottom: 97px;
+  }
   @media (max-width: $mobile-width-only) {
     padding-top: 42px;
-   
+    padding-bottom: 40px;
   }
+
   &__caption {
     color: $var3;
     font-size: 35px;
@@ -731,7 +784,6 @@ button {
 
     @media (max-width: $mobile-width-only) {
       justify-content: space-between;
-      
     }
 
     li {
@@ -762,9 +814,8 @@ button {
         font-size: 15px;
         width: 125px;
         margin: 0;
-      padding-top: 36px;
-      letter-spacing: 0.06em;
-
+        padding-top: 36px;
+        letter-spacing: 0.06em;
       }
 
       &:nth-child(1),
@@ -785,10 +836,7 @@ button {
     }
   }
 }
-* .in-addition__container {
-  margin: 85px 186px 65px;
-  display: flex;
-}
+
 .pagination {
   display: flex;
   flex-direction: row;

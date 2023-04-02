@@ -34,7 +34,7 @@
 }
 
 .container {
-  width: 93.75wv;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -303,7 +303,7 @@ button {
   .not-only__img {
     width: 74.2vw;
     padding-top: 96px;
-    padding-left: 46px;
+    padding-left: 16px;
     max-width: 569px;
     height: auto;
   }
@@ -357,6 +357,12 @@ button {
   max-width: 430px;
   display: block;
   align-self: end;
+}
+@media (max-width: 1279px) {
+  .about__text,
+  .in-addition__text {
+    max-width: 100%;
+  }
 }
 
 .about {
@@ -438,19 +444,47 @@ button {
 
 .in-addition {
   background-color: #f6f6f6;
-  background-image: url("./img/donation-dog.png") no-repeat;
-  background-position: 23% 47%;
 }
 .in-addition__container {
-  max-width: 1280px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 85px;
+  justify-content: center;
+  padding-left: 62px;
+}
+@media (max-width: 1279px) {
+  .in-addition__container {
+    width: 61vw;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .in-addition__container {
+    margin: 0 auto;
+  }
 }
 .in-addition__text {
-  margin: 0 0 0 auto;
   padding-left: 30px;
   padding-top: 0;
+  padding-bottom: 40px;
+}
+@media (max-width: 1279px) {
+  .in-addition__text {
+    text-align: center;
+    padding-left: 26px;
+    padding-right: 5px;
+    text-align: start;
+  }
+}
+@media (max-width: 1279px) {
+  .in-addition__text {
+    padding-left: 72px;
+    padding-right: 70px;
+  }
 }
 .in-addition__description {
   font-size: 15px;
@@ -466,9 +500,14 @@ button {
   font-size: 12px;
   line-height: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  padding-right: 16px;
+  padding-right: 50px;
   padding-top: 20px;
   letter-spacing: normal;
+}
+@media (max-width: 1279px) {
+  .in-addition__description--second {
+    padding-right: 0;
+  }
 }
 .in-addition__span {
   font-size: 20px;
@@ -482,6 +521,18 @@ button {
   border: none;
   padding: 9px 14px 10px 11px;
   width: 321px;
+  margin: 0;
+}
+@media (min-width: 767px) and (max-width: 1279px) {
+  .in-addition__button {
+    padding: 9px 15px 10px 13px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1279px) {
+  .in-addition__button {
+    margin: 0;
+  }
 }
 .in-addition__caption {
   margin: 0;
@@ -490,6 +541,14 @@ button {
   letter-spacing: 0.06em;
   line-height: 45px;
   padding-bottom: 17px;
+}
+.in-addition img {
+  margin: 0 auto;
+}
+@media (max-width: 1279px) {
+  .in-addition img {
+    margin-left: -36px;
+  }
 }
 
 .our-friends {
@@ -686,9 +745,15 @@ button {
 .help {
   padding: 80px 0px 34px;
 }
+@media (max-width: 1279px) {
+  .help {
+    padding-bottom: 97px;
+  }
+}
 @media (max-width: 767px) {
   .help {
     padding-top: 42px;
+    padding-bottom: 40px;
   }
 }
 .help__caption {
@@ -784,11 +849,6 @@ button {
     width: 50px;
     height: 50px;
   }
-}
-
-* .in-addition__container {
-  margin: 85px 186px 65px;
-  display: flex;
 }
 
 .pagination {
