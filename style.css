@@ -498,6 +498,11 @@ button {
   padding-top: 76px;
   padding-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .our-friends {
+    padding-top: 84px;
+  }
+}
 .our-friends--pets {
   padding-bottom: 95px;
 }
@@ -505,6 +510,19 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1280px) {
+  .our-friends__slider {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .our-friends__slider {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 .our-friends__caption {
   font-size: 35px;
@@ -515,6 +533,14 @@ button {
   text-align: center;
   padding-bottom: 60px;
   color: #545454;
+}
+@media (max-width: 767px) {
+  .our-friends__caption {
+    font-size: 25px;
+    margin: 0 -5px;
+    line-height: 32.5px;
+    padding-bottom: 40px;
+  }
 }
 .our-friends__button {
   padding: 14px 17px;
@@ -528,6 +554,11 @@ button {
 @media (max-width: 1279px) {
   .our-friends__button {
     margin-top: -4px;
+  }
+}
+@media (max-width: 767px) {
+  .our-friends__button {
+    margin: 18px 44px;
   }
 }
 .our-friends__button--inactive {
@@ -547,6 +578,11 @@ button {
 @media (max-width: 1279px) {
   .our-friends__list {
     padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .our-friends__list {
+    order: -1;
   }
 }
 .our-friends__list--pets {
@@ -575,12 +611,23 @@ button {
     display: none;
   }
 }
+@media (max-width: 1279px) and (max-width: 767px) {
+  .our-friends__item:nth-child(n+2) {
+    display: none;
+  }
+}
 .our-friends__pets-name {
   font-size: 20px;
   color: #545454;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .our-friends__pets-name {
+    padding-top: 27px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .our-friend {
@@ -621,6 +668,11 @@ button {
 @media (max-width: 1279px) {
   .learn-more--yellow {
     margin-top: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .learn-more--yellow {
+    margin-top: 24px;
   }
 }
 

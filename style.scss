@@ -505,6 +505,10 @@ button {
   background: $var7;
   padding-top: 76px;
   padding-bottom: 100px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 84px;
+  }
   &--pets {
     padding-bottom: 95px;
   }
@@ -512,6 +516,18 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $desktop-width) {
+      display: flex;
+      
+    }
+
+    @media (max-width: $mobile-width-only) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 280px;
+      margin: 0 auto;
+    }
   }
   &__caption {
     font-size: 35px;
@@ -523,6 +539,13 @@ button {
     text-align: center;
     padding-bottom: 60px;
     color: $var3;
+
+    @media (max-width: $mobile-width-only) {
+      font-size: 25px;
+      margin: 0 -5px;
+      line-height: 32.5px;
+      padding-bottom: 40px;
+    }
   }
   &__button {
     padding: 14px 17px;
@@ -536,12 +559,19 @@ button {
     @media (max-width: $tablet-width) {
       margin-top: -4px;
     }
+
+    @media (max-width:$mobile-width-only) {
+      margin: 18px 44px;
+     
+    }
     &--inactive {
       border: 2px solid $var1;
     }
     &--active {
       background-color: $var2;
     }
+
+   
   }
   &__list {
     display: flex;
@@ -553,6 +583,10 @@ button {
 
     @media (max-width: $tablet-width) {
       padding: 0;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      order: -1;
     }
     &--pets {
       padding: 0;
@@ -576,9 +610,18 @@ button {
         display: none;
       }
 
+      @media (max-width: $mobile-width-only) {
+        &:nth-child(n+2) {
+          display: none;
+        }
+
+       
+      }
+
       padding-right: 0;
       padding-left: 13px;
       padding-right: 19px;
+      
     }
   }
   &__pets-name {
@@ -588,6 +631,11 @@ button {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 27px;
+      letter-spacing: 0.06em;
+    }
   }
 }
 .our-friend {
@@ -626,6 +674,10 @@ button {
 
     @media (max-width: $tablet-width) {
       margin-top: 56px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: 24px;
     }
   }
 }
