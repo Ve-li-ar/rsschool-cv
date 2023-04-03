@@ -64,9 +64,9 @@ $mobile-width-only: 767px;
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 87.5vw;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 88vw;
+    padding-left: 9px;
+    padding-right: 13px;
   }
 }
 
@@ -80,8 +80,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden,
-.button-burger {
+.visually-hidden {
   visibility: hidden;
 }
 
@@ -92,7 +91,11 @@ a {
   position: relative;
 
   &--pets {
-    padding-bottom: 11px;
+    padding-bottom: 31px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 31px;
+    }
   }
   &__caption {
     font-size: 32px;
@@ -127,17 +130,26 @@ a {
     }
   }
 
-  .button-burger::before {
+  .button-burger {
+
+    visibility: hidden;
     display: block;
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
-    width: 24px;
+    top: 19px;
+    right: 18px;
+    width: 29px;
     height: 2px;
-    background-color: black;
-    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+    background-color: #F1CDB3;
+    box-shadow: 0 10px 0 0#F1CDB3, 0 20px 0 0 #F1CDB3;
     z-index: 10;
+    @media (max-width: 767px) {
+      visibility: visible;
+    }
+    &--pets {
+      background-color: black;
+    box-shadow: 0 10px 0 0 black, 0 20px 0 0 black;
+    }
   }
 }
 
@@ -298,13 +310,13 @@ button {
     padding-top: 168px;
 
     @media (max-width: $tablet-width) {
-      padding-top: 46px;
+      padding-top: 60px;
       padding-left: 124px;
     }
 
     @media (max-width: $mobile-width-only) {
       padding-left: 0;
-      padding-top: 43px;
+      padding-top: 60px;
       margin: 0 auto;
     }
   }
@@ -320,7 +332,7 @@ button {
     @media (max-width: $tablet-width) {
       width: 74.2vw;
       padding-top: 96px;
-      padding-left: 16px;
+      padding-left: 46px;
 
       max-width: 569px;
       height: auto;
@@ -428,7 +440,7 @@ button {
     margin: 0 auto;
     padding-bottom: 80px;
     margin: 0;
-    padding: 20px 15px;
+    padding: 20px 0px;
 
     @media (max-width: $tablet-width) {
       max-width: 100%;
@@ -445,11 +457,17 @@ button {
     margin: 0 auto;
     display: block;
     height: auto;
- 
   }
 }
 .in-addition {
   background-color: $var7;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
 
   &__container {
     width: 1200px;
@@ -459,6 +477,7 @@ button {
     padding-top: 85px;
     justify-content: center;
     padding-left: 62px;
+    padding-bottom: 45px;
 
     @media (max-width: $tablet-width) {
       width: 61vw;
@@ -471,6 +490,7 @@ button {
       margin: 0 auto;
       width: 86vw;
       padding-top: 43px;
+      padding-bottom: 37px;
     }
   }
   &__text {
@@ -584,7 +604,6 @@ button {
 
     @media (max-width: $mobile-width-only) {
       padding-left: 12px;
-
     }
   }
 }
@@ -600,6 +619,15 @@ button {
   }
   &--pets {
     padding-bottom: 95px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 74px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
   &__slider {
     display: flex;
@@ -634,6 +662,16 @@ button {
       line-height: 32.5px;
       padding-bottom: 40px;
     }
+
+    &--pets {
+      padding-bottom: 62px;
+      @media (max-width: 768px) {
+        padding-bottom: 11px;
+      }
+      @media (max-width: $mobile-width-only) {
+        padding-bottom: 37px;
+      }
+    }
   }
   &__button {
     padding: 14px 17px;
@@ -660,7 +698,7 @@ button {
   }
   &__list {
     display: flex;
-    padding: 0 40px;
+    padding: 0 0 40px 0;
     list-style: none;
     margin: 0;
     justify-content: space-between;
@@ -677,33 +715,71 @@ button {
       padding: 0;
       flex-wrap: wrap;
       display: flex;
-    }
-  }
-  &__item {
-    padding-right: 90px;
-    cursor: pointer;
-    &--pets {
-      padding-right: 0;
-      padding-bottom: 26px;
-    }
-    &:last-child {
-      padding-right: 0;
-    }
+      & li:nth-child(n + 3) {
+        display: block;
+      }
 
-    @media (max-width: $tablet-width) {
-      &:nth-child(n + 3) {
-        display: none;
+      @media (max-width: 768px) {
+        justify-content: center;
+
+        & li:nth-child(7),
+        & li:nth-child(8) {
+          display: none;
+        }
       }
 
       @media (max-width: $mobile-width-only) {
+        & li:nth-child(4),
+        & li:nth-child(5),
+        & li:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__item {
+    padding-right: 0;
+    padding-left: 38px;
+    padding-right: 52px;
+    cursor: pointer;
+
+    @media (max-width: 1200px) {
+      padding-left: 13px;
+      padding-right: 18px;
+      &:nth-child(n + 3) {
+        display: none;
+
+      }
+
+      
+    }@media (max-width: 767px) {
         &:nth-child(n + 2) {
           display: none;
         }
       }
 
+    &--pets {
       padding-right: 0;
-      padding-left: 13px;
-      padding-right: 19px;
+      padding-bottom: 26px;
+      padding-left: 0;
+
+      @media (max-width: $tablet-width) {
+        padding-right: 21px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-top: 23px;
+
+        &:nth-child(n + 2) {
+          display: block;
+        }
+      }
+
+      @media (max-width: $mobile-width-only) {
+        padding-bottom: 28px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+      }
     }
   }
   &__pets-name {
@@ -749,6 +825,7 @@ button {
   letter-spacing: 0.06em;
   max-width: 260px;
   color: $var4;
+
   &--yellow {
     background-color: $var2;
     padding: 15px 36px;
@@ -884,8 +961,17 @@ button {
   width: 340px;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    padding-top: 37px;
+  }
+
   &__container {
     display: flex;
+
+    @media (max-width: $mobile-width-only) {
+      margin-left: -13px;
+      margin-right: -13px;
+    }
   }
 
   &__active {
@@ -921,33 +1007,83 @@ button {
     border: 1px solid $var2;
     color: $var2;
   }
+
+  &--pets {
+    padding-top: 34px;
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 15px;
+    }
+  }
 }
 .footer {
   background: linear-gradient(to right, #3d3027, #19191b);
   padding-top: 52px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 27px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 28px;
+    text-align: center;
+    line-height: 32px;
+  }
   &__list {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding-right: 68px;
-    li {
-      padding-top: 3px;
+
+    @media (max-width: $tablet-width) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-right: 0;
       display: flex;
-      padding-bottom: 0;
-      a {
-        color: $var2;
+      margin: 0 auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  li {
+    padding-top: 3px;
+    display: flex;
+    padding-bottom: 0;
+
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
+    a {
+      color: $var2;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      border: none;
+
+      @media (max-width: $mobile-width-only) {
         font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 0.06em;
-        border: none;
       }
     }
   }
+
   &__waiting-list {
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 767px) and (min-width: 321px) {
+      margin: 0 auto;
+    }
+
     li {
       padding-bottom: 33px;
+
       &:first-child {
         @extend %georgia-font;
 
@@ -956,11 +1092,33 @@ button {
         line-height: 45px;
         letter-spacing: 0.06em;
         padding-top: 0;
+
+        @media (max-width: $mobile-width-only) {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      @media (min-width: 321px) and (max-width: 767px) {
+        margin: 0 auto;
+      }
+      @media (max-width: $mobile-width-only) {
+        font-size: 25px;
+        line-height: 32px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        line-height: 23px;
+        padding-bottom: 35px;
       }
     }
     .footer__questions {
       padding-bottom: 45px;
       padding-top: 10px;
+
+      @media (max-width: $mobile-width-only) {
+        padding-bottom: 43px;
+      }
     }
     a {
       text-decoration: none;
@@ -971,10 +1129,31 @@ button {
     padding-right: 93px;
     width: 23vw;
     letter-spacing: 0.06em;
+
+    @media (max-width: $tablet-width) {
+      width: 39vw;
+      padding-right: 0;
+    }
+    & img {
+      @media (max-width: $mobile-width-only) {
+        margin: 0 auto;
+        margin-left: 9px;
+        width: 260px;
+      }
+    }
     &:last-child {
       padding-right: 0;
       margin-right: -54px;
       margin-top: -15px;
+
+      @media (max-width: $tablet-width) {
+        margin-right: 0;
+        margin-top: 22px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        margin-top: 0;
+      }
     }
   }
   &__svg {
@@ -982,5 +1161,15 @@ button {
     height: 100%;
     margin-right: 15px;
     margin-left: 2px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-right: 0;
+      margin-left: 0px;
+    }
+  }
+  &__waiting-svg {
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
   }
 }
