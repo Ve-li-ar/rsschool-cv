@@ -381,7 +381,19 @@ button {
   margin: 75px 175px 94px;
   flex-direction: row-reverse;
   justify-content: space-between;
+  @media (max-width: $tablet-width) {
+    margin: 60px 138px 106px;
+    max-height: 1048px;
+    flex-direction: column;
+  }
 
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    text-align: justify;
+    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   &__caption {
     font-weight: normal;
     font-size: 35px;
@@ -398,20 +410,6 @@ button {
       text-align: center;
       line-height: 32.5px;
     }
-  }
-
-  @media (max-width: $tablet-width) {
-    margin: 60px 138px 106px;
-    max-height: 1048px;
-    flex-direction: column;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    margin: 0 auto;
-    text-align: justify;
-    padding-right: 0;
-    padding-left: 5px;
-    padding-right: 5px;
   }
 
   &__description {
@@ -446,6 +444,8 @@ button {
   &__img {
     margin: 0 auto;
     display: block;
+    height: auto;
+ 
   }
 }
 .in-addition {
@@ -469,6 +469,8 @@ button {
 
     @media (max-width: $mobile-width-only) {
       margin: 0 auto;
+      width: 86vw;
+      padding-top: 43px;
     }
   }
   &__text {
@@ -487,6 +489,12 @@ button {
       padding-left: 72px;
       padding-right: 70px;
     }
+
+    @media (max-width: $mobile-width-only) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 23px;
+    }
   }
 
   &__description {
@@ -495,6 +503,13 @@ button {
     margin: 0;
     letter-spacing: 0.06em;
     padding-bottom: 17px;
+    @media (max-width: $tablet-width) and (min-width: 321px) {
+    }
+    @media (max-width: $mobile-width-only) {
+      padding-bottom: 22px;
+      text-align: center;
+      letter-spacing: normal;
+    }
     &--second {
       color: $var9;
       font-weight: normal;
@@ -508,6 +523,7 @@ button {
 
       @media (max-width: $tablet-width) {
         padding-right: 0;
+        text-align: justify;
       }
     }
   }
@@ -517,6 +533,10 @@ button {
     letter-spacing: 0.06em;
     padding-left: 10px;
     color: $var3;
+
+    @media (max-width: $mobile-width-only) {
+      font-size: 15px;
+    }
   }
   &__button {
     background-color: $var2;
@@ -533,6 +553,11 @@ button {
     @media (max-width: $tablet-width) {
       margin: 0;
     }
+
+    @media (max-width: $mobile-width-only) {
+      width: 252px;
+      padding: 8px 12px;
+    }
   }
   &__caption {
     margin: 0;
@@ -541,12 +566,25 @@ button {
     letter-spacing: 0.06em;
     line-height: 45px;
     padding-bottom: 17px;
+
+    @media (max-width: $mobile-width-only) {
+      font-size: 25px;
+      text-align: center;
+      line-height: 32px;
+      padding-bottom: 22px;
+    }
   }
 
   & img {
     margin: 0 auto;
     @media (max-width: $tablet-width) {
-      margin-left: -36px;
+      margin-left: -8px;
+      width: auto;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding-left: 12px;
+
     }
   }
 }
